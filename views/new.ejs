@@ -1,0 +1,41 @@
+<% include partials/header %>
+<link rel="stylesheet" href="/css/newBlog.css">
+  
+ <div class="row" id="Blogform">
+    
+    <form class="col s12" action="/blog" method="POST">
+      
+      <div class="row">
+        <div class="input-field col s6">
+          <label for="blog_title" class="active">Title</label>
+          <input id="blog_title" type="text" name="blog[title]" class="validate">
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="input-field col s6">
+          <label for="blog_content" class="active">Body</label>
+          <input  id="blog_content" name="blog[body]" type="text" class="validate">
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="input-field col s12">
+          <label for="img_url" class="active">Image URL</label>
+          <input id="img_url" type="text" name="blog[img]" class="validate">
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col s12">
+          <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+            <i class="material-icons">send</i>
+          </button>
+        </div>
+      </div>
+  
+    </form>
+    
+  </div>
+        
+<% include partials/footer %>

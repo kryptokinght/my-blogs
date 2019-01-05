@@ -1,0 +1,24 @@
+<% include partials/header %>
+
+    <% blogs.forEach((blog) => { %>
+        <div class="blog-content">    
+            <a href="/blog/<%=blog._id%>">
+                <h3 class="blogstub-title"><%= blog.title %></h3>
+            </a>
+            <div class="description">
+                <p><%=blog.body.substring(0,100)%>...</p>    
+            </div>
+            <div class="meta">
+                <span><%= blog.created%></span>    
+            </div>
+            <img class="blogstub-image" href="<%= blog.image %>">
+            <div class="blog-control">
+                <a href="/blog/<%= blog._id %>">Read More</a>
+                <a href="/blog/<%= blog._id %>/edit">Edit</a>
+                <form id='delete' action='/blog/<%=blog._id%>?_method=DELETE' method='POST'>
+                    <button type='submit'>Delete</button>
+                </form>    
+            </div>
+        </div>
+    <% }) %>
+<% include partials/footer %>

@@ -1,0 +1,72 @@
+
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	background-image: url('/b.jpg'); 
+	background-attachment: fixed;
+	background-position: center;
+}
+.custom-background {
+	background-color: rgba(255, 245, 255, 0.2);
+}
+.navbar-brand{
+	font-size: 30px;
+	color: white;
+}
+.color-white {
+	color: white;
+}
+.nav-link {
+	color: white;
+	font-size: 18px;
+}
+
+.carousel-inner {
+	border-radius: 8px;
+}
+
+nav, .input-group, textarea, input{
+	box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 2px 9px 1px rgba(0, 0, 0, 0.12), 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+}
+
+
+#mycarousel {
+	width: 700px;
+	margin: auto;
+	margin-top: 20px;
+	position: relative;
+	box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 2px 9px 1px rgba(0, 0, 0, 0.12), 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-item {
+	margin:0 auto;
+}
+
+
+@media screen and (min-width: 500px) {
+	#mycarousel {
+ 		width: 500px;
+		margin: auto;
+		margin-top: 20px;
+	}
+}
+@media screen and (min-width: 750px) {
+	#mycarousel {
+		width: 700px;
+		margin: auto;
+		margin-top: 20px;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	#mycarousel {
+		width: 800px;
+		margin: auto;
+		margin-top: 20px;
+	}
+}
